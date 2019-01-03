@@ -259,6 +259,147 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://lvinno.github.io/2019/01/03/jquery-基础操作/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="lvinno">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="lvinno's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/01/03/jquery-基础操作/" itemprop="url">jquery 基础操作</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-03T13:35:55+08:00">
+                2019-01-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/jquery/" itemprop="url" rel="index">
+                    <span itemprop="name">-jquery</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="基础的-jquery-选择器及API"><a href="#基础的-jquery-选择器及API" class="headerlink" title="基础的 jquery 选择器及API"></a>基础的 jquery 选择器及API</h1><h2 id="标签选择器，类选择器，ID选择器及一些api的例子"><a href="#标签选择器，类选择器，ID选择器及一些api的例子" class="headerlink" title="标签选择器，类选择器，ID选择器及一些api的例子"></a>标签选择器，类选择器，ID选择器及一些api的例子</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    $(<span class="string">"#target1"</span>).css(<span class="string">"color"</span>, <span class="string">"red"</span>);<span class="regexp">/</span></span><br><span class="line"><span class="regexp">    /</span><span class="regexp">/id选择器  更改css属性</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">    $("#target1").prop("disabled", true);</span></span><br><span class="line"><span class="regexp">    /</span><span class="regexp">/id选择器 禁用按钮 </span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">    $("#target4").remove();</span></span><br><span class="line"><span class="regexp">    /</span><span class="regexp">/移除标签</span></span><br><span class="line"><span class="regexp">    </span></span><br><span class="line"><span class="regexp">    $("#target2").appendTo("#right-well");</span></span><br><span class="line"><span class="regexp">    /</span><span class="regexp">/插入标签</span></span><br><span class="line"><span class="regexp">    </span></span><br><span class="line"><span class="regexp">    $("#target5").clone().appendTo("#left-well");</span></span><br><span class="line"><span class="regexp">    /</span><span class="regexp">/克隆 并插入</span></span><br><span class="line"><span class="regexp">    </span></span><br><span class="line"><span class="regexp">    $("#target1").parent().css("background-color", "red");</span></span><br><span class="line"><span class="regexp">    /</span><span class="regexp">/标签父选择器 </span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">    $("#right-well").children().css("background-color","orange");</span></span><br><span class="line"><span class="regexp">    /</span><span class="regexp">/标签子选择器</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">    </span></span><br><span class="line"><span class="regexp">    $(".target:nth-child(2)").addClass("animated bounce");</span></span><br><span class="line"><span class="regexp">    /</span><span class="regexp">/选取父选择器的子标签    </span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">    $(".target:even").addClass("animated shake");</span></span><br><span class="line"><span class="regexp">    /</span><span class="regexp">/选取父选择器下偶数标签</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">    $("body").addClass("animated fadeOut hinge");</span></span><br><span class="line"><span class="regexp">    /</span><span class="regexp">/选取body标签    </span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">  &#125;);</span></span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://lvinno.github.io/2019/01/02/Bootstrap-基本操作/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -610,7 +751,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -621,7 +762,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -632,7 +773,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
