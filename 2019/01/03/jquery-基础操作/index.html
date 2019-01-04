@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="基础的 jquery 选择器及API标签选择器，类选择器，ID选择器及一些api的例子123456789101112131415161718192021222324252627282930313233$(document).ready(function() &amp;#123;    $(&quot;#target1&quot;).css(&quot;color&quot;, &quot;red&quot;);/    //id选择器  更改css属性    $(">
+<meta name="description" content="基础的 jquery 选择器及API标签选择器，类选择器，ID选择器及一些api的例子123456789101112131415161718192021222324252627282930313233$(document).ready(function() &amp;#123;    $(&quot;#target1&quot;).css(&quot;color&quot;, &quot;red&quot;);    //id选择器  更改css属性    $(&quot;">
 <meta name="keywords" content="-jquery learning">
 <meta property="og:type" content="article">
 <meta property="og:title" content="jquery 基础操作">
 <meta property="og:url" content="https://lvinno.github.io/2019/01/03/jquery-基础操作/index.html">
 <meta property="og:site_name" content="lvinno&#39;s Blog">
-<meta property="og:description" content="基础的 jquery 选择器及API标签选择器，类选择器，ID选择器及一些api的例子123456789101112131415161718192021222324252627282930313233$(document).ready(function() &amp;#123;    $(&quot;#target1&quot;).css(&quot;color&quot;, &quot;red&quot;);/    //id选择器  更改css属性    $(">
+<meta property="og:description" content="基础的 jquery 选择器及API标签选择器，类选择器，ID选择器及一些api的例子123456789101112131415161718192021222324252627282930313233$(document).ready(function() &amp;#123;    $(&quot;#target1&quot;).css(&quot;color&quot;, &quot;red&quot;);    //id选择器  更改css属性    $(&quot;">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-01-03T05:52:29.000Z">
+<meta property="og:updated_time" content="2019-01-03T05:54:03.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jquery 基础操作">
-<meta name="twitter:description" content="基础的 jquery 选择器及API标签选择器，类选择器，ID选择器及一些api的例子123456789101112131415161718192021222324252627282930313233$(document).ready(function() &amp;#123;    $(&quot;#target1&quot;).css(&quot;color&quot;, &quot;red&quot;);/    //id选择器  更改css属性    $(">
+<meta name="twitter:description" content="基础的 jquery 选择器及API标签选择器，类选择器，ID选择器及一些api的例子123456789101112131415161718192021222324252627282930313233$(document).ready(function() &amp;#123;    $(&quot;#target1&quot;).css(&quot;color&quot;, &quot;red&quot;);    //id选择器  更改css属性    $(&quot;">
 
 
 
@@ -352,7 +352,7 @@
       
 
       
-        <h1 id="基础的-jquery-选择器及API"><a href="#基础的-jquery-选择器及API" class="headerlink" title="基础的 jquery 选择器及API"></a>基础的 jquery 选择器及API</h1><h2 id="标签选择器，类选择器，ID选择器及一些api的例子"><a href="#标签选择器，类选择器，ID选择器及一些api的例子" class="headerlink" title="标签选择器，类选择器，ID选择器及一些api的例子"></a>标签选择器，类选择器，ID选择器及一些api的例子</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    $(<span class="string">"#target1"</span>).css(<span class="string">"color"</span>, <span class="string">"red"</span>);<span class="regexp">/</span></span><br><span class="line"><span class="regexp">    /</span><span class="regexp">/id选择器  更改css属性</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">    $("#target1").prop("disabled", true);</span></span><br><span class="line"><span class="regexp">    /</span><span class="regexp">/id选择器 禁用按钮 </span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">    $("#target4").remove();</span></span><br><span class="line"><span class="regexp">    /</span><span class="regexp">/移除标签</span></span><br><span class="line"><span class="regexp">    </span></span><br><span class="line"><span class="regexp">    $("#target2").appendTo("#right-well");</span></span><br><span class="line"><span class="regexp">    /</span><span class="regexp">/插入标签</span></span><br><span class="line"><span class="regexp">    </span></span><br><span class="line"><span class="regexp">    $("#target5").clone().appendTo("#left-well");</span></span><br><span class="line"><span class="regexp">    /</span><span class="regexp">/克隆 并插入</span></span><br><span class="line"><span class="regexp">    </span></span><br><span class="line"><span class="regexp">    $("#target1").parent().css("background-color", "red");</span></span><br><span class="line"><span class="regexp">    /</span><span class="regexp">/标签父选择器 </span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">    $("#right-well").children().css("background-color","orange");</span></span><br><span class="line"><span class="regexp">    /</span><span class="regexp">/标签子选择器</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">    </span></span><br><span class="line"><span class="regexp">    $(".target:nth-child(2)").addClass("animated bounce");</span></span><br><span class="line"><span class="regexp">    /</span><span class="regexp">/选取父选择器的子标签    </span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">    $(".target:even").addClass("animated shake");</span></span><br><span class="line"><span class="regexp">    /</span><span class="regexp">/选取父选择器下偶数标签</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">    $("body").addClass("animated fadeOut hinge");</span></span><br><span class="line"><span class="regexp">    /</span><span class="regexp">/选取body标签    </span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">  &#125;);</span></span><br></pre></td></tr></table></figure>
+        <h1 id="基础的-jquery-选择器及API"><a href="#基础的-jquery-选择器及API" class="headerlink" title="基础的 jquery 选择器及API"></a>基础的 jquery 选择器及API</h1><h2 id="标签选择器，类选择器，ID选择器及一些api的例子"><a href="#标签选择器，类选择器，ID选择器及一些api的例子" class="headerlink" title="标签选择器，类选择器，ID选择器及一些api的例子"></a>标签选择器，类选择器，ID选择器及一些api的例子</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    $(<span class="string">"#target1"</span>).css(<span class="string">"color"</span>, <span class="string">"red"</span>);</span><br><span class="line">    <span class="comment">//id选择器  更改css属性</span></span><br><span class="line"></span><br><span class="line">    $(<span class="string">"#target1"</span>).prop(<span class="string">"disabled"</span>, <span class="literal">true</span>);</span><br><span class="line">    <span class="comment">//id选择器 禁用按钮 </span></span><br><span class="line"></span><br><span class="line">    $(<span class="string">"#target4"</span>).remove();</span><br><span class="line">    <span class="comment">//移除标签</span></span><br><span class="line">    </span><br><span class="line">    $(<span class="string">"#target2"</span>).appendTo(<span class="string">"#right-well"</span>);</span><br><span class="line">    <span class="comment">//插入标签</span></span><br><span class="line">    </span><br><span class="line">    $(<span class="string">"#target5"</span>).clone().appendTo(<span class="string">"#left-well"</span>);</span><br><span class="line">    <span class="comment">//克隆 并插入</span></span><br><span class="line">    </span><br><span class="line">    $(<span class="string">"#target1"</span>).parent().css(<span class="string">"background-color"</span>, <span class="string">"red"</span>);</span><br><span class="line">    <span class="comment">//标签父选择器 </span></span><br><span class="line"></span><br><span class="line">    $(<span class="string">"#right-well"</span>).children().css(<span class="string">"background-color"</span>,<span class="string">"orange"</span>);</span><br><span class="line">    <span class="comment">//标签子选择器</span></span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">    $(<span class="string">".target:nth-child(2)"</span>).addClass(<span class="string">"animated bounce"</span>);</span><br><span class="line">    <span class="comment">//选取父选择器的子标签    </span></span><br><span class="line"></span><br><span class="line">    $(<span class="string">".target:even"</span>).addClass(<span class="string">"animated shake"</span>);</span><br><span class="line">    <span class="comment">//选取父选择器下偶数标签</span></span><br><span class="line"></span><br><span class="line">    $(<span class="string">"body"</span>).addClass(<span class="string">"animated fadeOut hinge"</span>);</span><br><span class="line">    <span class="comment">//选取body标签    </span></span><br><span class="line"></span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -391,6 +391,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/01/04/React学习-props-state/" rel="prev" title="React学习(1) props & state">
+                React学习(1) props & state <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -467,7 +471,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -478,7 +482,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -489,7 +493,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
